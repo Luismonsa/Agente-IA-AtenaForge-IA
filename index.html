@@ -1,13 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AtenaForge AI - Logo 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F3F4F6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .logo-container {
+            text-align: center;
+            padding: 40px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .logo-symbol {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+        
+        .neural-ring {
+            width: 100%;
+            height: 100%;
+            border: 2px solid #1E3A8A;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .neural-node {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #1E3A8A;
+            border-radius: 50%;
+        }
+        
+        .anvil {
+            position: absolute;
+            width: 60px;
+            height: 40px;
+            background: #1E3A8A;
+            border-radius: 5px;
+            top: 70px;
+            left: 60px;
+            transform: skew(-5deg);
+        }
+        
+        .flame {
+            position: absolute;
+            width: 30px;
+            height: 50px;
+            background: #F97316;
+            border-radius: 50% 50% 20% 20%;
+            top: 30px;
+            left: 75px;
+            box-shadow: 0 0 20px #F97316;
+            transform-origin: bottom;
+            animation: flicker 3s infinite alternate;
+        }
+        
+        .logo-text {
+            margin-top: 25px;
+        }
+        
+        .atena {
+            font-weight: 700;
+            font-size: 28px;
+            color: #1E3A8A;
+        }
+        
+        .forge {
+            font-weight: 400;
+            font-size: 28px;
+            color: #1E3A8A;
+        }
+        
+        .forge-f {
+            color: #F97316;
+        }
+        
+        .ai {
+            font-size: 16px;
+            vertical-align: super;
+            color: #1E3A8A;
+            margin-left: 2px;
+        }
+        
+        @keyframes flicker {
+            0%, 100% { transform: scaleY(1) skew(0deg); }
+            25% { transform: scaleY(1.1) skew(2deg); }
+            50% { transform: scaleY(0.9) skew(-1deg); }
+            75% { transform: scaleY(1.05) skew(1deg); }
+        }
+        
+        .node-1 { top: 20px; left: 86px; }
+        .node-2 { top: 40px; left: 140px; }
+        .node-3 { top: 80px; left: 160px; }
+        .node-4 { top: 120px; left: 140px; }
+        .node-5 { top: 140px; left: 86px; }
+        .node-6 { top: 120px; left: 32px; }
+        .node-7 { top: 80px; left: 12px; }
+        .node-8 { top: 40px; left: 32px; }
+    </style>
 </head>
 <body>
-    ¡Saludo cordial. La mediación es un enfoque del conflicto basado en soluciones.
-En este proyecto abordaremos la mediación como una solución beneficiosa para tel ser humano en situaciones de conflicto. 
-Se comienza por aceptar que cada uno acepte las reglas básicas del proceso de mediación.
+    <div class="logo-container">
+        <div class="logo-symbol">
+            <div class="neural-ring"></div>
+            <div class="node neural-node node-1"></div>
+            <div class="node neural-node node-2"></div>
+            <div class="node neural-node node-3"></div>
+            <div class="node neural-node node-4"></div>
+            <div class="node neural-node node-5"></div>
+            <div class="node neural-node node-6"></div>
+            <div class="node neural-node node-7"></div>
+            <div class="node neural-node node-8"></div>
+            <div class="anvil"></div>
+            <div class="flame"></div>
+        </div>
+        <div class="logo-text">
+            <h1><span class="atena">Atena</span><span class="forge"><span class="forge-f">F</span>orge</span><span class="ai">AI</span></h1>
+        </div>
+    </div>
 </body>
 </html>
